@@ -1,0 +1,13 @@
+.listaCategorias{
+    display: flex;
+    flex-direction: column;
+}
+.listaCategorias ul{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    list-style: none;
+}
+.listaCategorias input {
+    width: 350px;
+}

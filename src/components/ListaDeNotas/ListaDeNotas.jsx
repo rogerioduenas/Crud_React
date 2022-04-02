@@ -7,6 +7,7 @@ export default class ListaDeNotas extends Component {
     constructor() {
         super();
         this.state = { notas: [] };
+        // this.state = { notas: [{key: 1, titulo: 'titulo', texto: 'Nota', categoria: 'sem categoria' }, { key: 2, titulo: 'titulo', texto: 'Nota', categoria: 'sem categoria' }, { key: 3, titulo: 'titulo', texto: 'Nota', categoria: 'sem categoria' }] };
         this._novasNotas = this._novasNotas.bind(this);
     }
 
@@ -19,7 +20,7 @@ export default class ListaDeNotas extends Component {
     }
 
     _novasNotas(notas) {
-        this.setState({...this.state, notas})
+        this.setState({ ...this.state, notas })
     }
 
     render() {
@@ -27,14 +28,16 @@ export default class ListaDeNotas extends Component {
             <ul>
                 {this.state.notas.map((nota, index) => {
                     return (
-                        <li key={index}>
-                            <CardNota
-                                indice={index}
-                                titulo={nota.titulo}
-                                texto={nota.texto}
-                                apagarNota={this.props.apagarNota}
-                                categoria={nota.categoria} />
-                        </li>
+                        <section className='listaNotas'>
+                            <li key={index}>
+                                <CardNota
+                                    indice={index}
+                                    titulo={nota.titulo}
+                                    texto={nota.texto}
+                                    apagarNota={this.props.apagarNota}
+                                    categoria={nota.categoria} />
+                            </li>
+                        </section>
                     )
                 })}
             </ul>

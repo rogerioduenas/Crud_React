@@ -5,4 +5,8 @@
 }
 .formNota{
     display: flex;
+    flex-wrap: nowrap;
+}
+.formNota .div1{
+    width: 350px;
 }

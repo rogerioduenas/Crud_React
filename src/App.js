@@ -17,22 +17,24 @@ export default class App extends Component {
 
   render() {
     return (
-      <section >
-        <FormularioCadastro
-          categorias={this.categorias}
-          criarNota={this.notas.adicionarNota.bind(this.notas)} />
-        <main>
-          <ListaDeCategorias
+      <section className='formNota'>
+        <div className='div1'>
+          <FormularioCadastro
+            categorias={this.categorias}
+            criarNota={this.notas.adicionarNota.bind(this.notas)} />
+            <ListaDeCategorias
             adicionarCategoria={this.categorias.adicionarCategoria.bind(this.categorias)}
             categorias={this.categorias} />
+        </div>
+        <div>
           <ListaDeNotas
             notas={this.notas}
             apagarNota={this.notas.apagarNota.bind(this.notas)} />
-        </main>
+        </div>
       </section>
     )
   }
-  
+
 }
 
 

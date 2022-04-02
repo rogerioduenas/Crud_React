@@ -9,7 +9,7 @@ export default class CardNota extends Component {
     }
     render() {
         return (
-            <section>
+            <section className='cardNota'>
                 <header>
                     <h3>{this.props.titulo}</h3>
                     <DeleteSVG onClick={this.apagar.bind(this)} />
