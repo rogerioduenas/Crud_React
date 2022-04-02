@@ -6,7 +6,8 @@ export default class ListaDeNotas extends Component {
 
     constructor() {
         super();
-        this.state = { notas: [] };
+        // this.state = { notas: [] };
+        this.state = { notas: [{titulo: 'Nota sem titulo', texto: 'Nota sem conteúdo', categoria: 'Sem categoria'}]  };
         this._novasNotas = this._novasNotas.bind(this);
     }
 
@@ -27,7 +28,7 @@ export default class ListaDeNotas extends Component {
             <ul>
                 {this.state.notas.map((nota, index) => {
                     return (
-                        <li key={index}>
+                        <li key={index} className="listaNotas">
                             <CardNota
                                 indice={index}
                                 titulo={nota.titulo}

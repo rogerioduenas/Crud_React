@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:ital@1&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 .formNota{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.teste{
     display: flex;
 }

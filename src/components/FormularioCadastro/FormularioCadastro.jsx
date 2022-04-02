@@ -5,9 +5,9 @@ export default class FormularioCadastro extends Component {
 
     constructor(props) {
         super(props);
-        this.titulo = "";
-        this.texto = "";
-        this.categoria = "sem categoria";
+        this.titulo = "Nota sem titulo";
+        this.texto = "Nota sem conteúdo";
+        this.categoria = "Sem categoria";
         this.state = { categorias: [] };
         this._novasCategorias = this._novasCategorias.bind(this);
     }

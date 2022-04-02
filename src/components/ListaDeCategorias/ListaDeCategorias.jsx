@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./style.css"
 
 export default class ListaDeCategorias extends Component {
 
@@ -29,17 +30,16 @@ export default class ListaDeCategorias extends Component {
 
     render() {
         return (
-            <section>
+            <section className='listaCategoria'>
+                <input
+                    type="text"
+                    placeholder="Adicionar Categoria"
+                    onKeyUp={this._handleEventoInput.bind(this)}/>
                 <ul>
                     {this.state.categorias.map((categoria, key) => {
                         return <li key={key}>{categoria}</li>
                     })}
                 </ul>
-                <input
-                    type="text"
-                    placeholder="Adicionar Categoria"
-                    onKeyUp={this._handleEventoInput.bind(this)}
-                />
             </section>
         );
     }

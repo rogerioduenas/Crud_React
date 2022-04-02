@@ -17,14 +17,16 @@ export default class App extends Component {
 
   render() {
     return (
-      <section >
-        <FormularioCadastro
-          categorias={this.categorias}
-          criarNota={this.notas.adicionarNota.bind(this.notas)} />
-        <main>
+      <section className='formNota'>
+        <div>
+          <FormularioCadastro
+            categorias={this.categorias}
+            criarNota={this.notas.adicionarNota.bind(this.notas)} />
           <ListaDeCategorias
             adicionarCategoria={this.categorias.adicionarCategoria.bind(this.categorias)}
             categorias={this.categorias} />
+        </div>
+        <main>
           <ListaDeNotas
             notas={this.notas}
             apagarNota={this.notas.apagarNota.bind(this.notas)} />
@@ -32,7 +34,7 @@ export default class App extends Component {
       </section>
     )
   }
-  
+
 }
 
 

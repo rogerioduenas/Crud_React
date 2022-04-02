@@ -1,0 +1,18 @@
+.cardNota {
+    min-width: 140px;
+    min-height: 130px;
+    background: rgb(184, 184, 186);
+    border-radius: 20px;
+}
+.cardNota h3 {
+    text-align: center;
+    background: rgb(147, 147, 194);
+}
+.cardNota h4 {
+    text-align: center;
+    background: blue;
+}
+.cardNota p{
+    margin-top: 5px;
+    margin-left: 5px;
+}

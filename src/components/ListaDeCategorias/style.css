@@ -1,0 +1,19 @@
+.listaCategoria input{
+    width: 350px;
+}
+.listaCategoria {
+    width: 350px;
+}
+.listaCategoria ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+}
+.listaCategoria li {
+    margin-top: 10px;
+    background: rgb(98, 189, 255);
+    padding: 7px;
+    border-radius: 5px;
+    color: rgb(119, 119, 119);
+}
