@@ -50,7 +50,12 @@ export default class FormularioCadastro extends Component {
     render() {
         return (
             <form
+                className="formCadastro"
                 onSubmit={this._criarNota.bind(this)}>
+                <input
+                    type="text"
+                    placeholder="Título"
+                    onChange={this._handleMudancaTitulo.bind(this)} />
                 <select
                     onChange={this._handleMudancaCategoria.bind(this)}>
                     <option>Sem Categoria</option>
@@ -58,11 +63,8 @@ export default class FormularioCadastro extends Component {
                         return <option key={index}>{categoria}</option>
                     })}
                 </select>
-                <input
-                    type="text"
-                    placeholder="Título"
-                    onChange={this._handleMudancaTitulo.bind(this)} />
                 <textarea
+                    rows={10}
                     placeholder="Escreva sua nota..."
                     onChange={this._handleMudancaTexto.bind(this)} />
                 <button>Criar Nota</button>
