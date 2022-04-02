@@ -12,8 +12,8 @@
 }
 .listaCategoria li {
     margin-top: 10px;
-    background: rgb(98, 189, 255);
+    background: rgb(214, 211, 211);
     padding: 7px;
     border-radius: 5px;
-    color: rgb(119, 119, 119);
+    color: rgb(52, 52, 52);
 }
