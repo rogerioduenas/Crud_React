@@ -4,6 +4,7 @@ import ListaDeNotas from "./components/ListaDeNotas";
 import ListaDeCategorias from './components/ListaDeCategorias';
 import Categorias from './dados/Categorias';
 import ArrayNotas from './dados/Notas';
+import "./App.css"
 
 
 export default class App extends Component {
