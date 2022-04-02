@@ -6,8 +6,7 @@ export default class ListaDeNotas extends Component {
 
     constructor() {
         super();
-        // this.state = { notas: [] };
-        this.state = { notas: [{titulo: 'Nota sem titulo', texto: 'Nota sem conteúdo', categoria: 'Sem categoria'}]  };
+        this.state = { notas: [] };
         this._novasNotas = this._novasNotas.bind(this);
     }
 
